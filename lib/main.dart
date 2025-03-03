@@ -13,19 +13,27 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: const Text(
-            "I AM BATMAN",
-            style: TextStyle(color: Colors.black),
+          title: Padding(
+            padding: const EdgeInsets.only(top: 20),
+            child: const Text(
+              "Friendscape.",
+              style: TextStyle(
+                color: Color.fromARGB(255, 255, 255, 255),
+                fontFamily: 'neuemontreal',
+                fontSize: 24,
+              ),
+            ),
           ),
           centerTitle: true,
-          backgroundColor: Colors.yellow,
+          backgroundColor: Color(0xFF001510),
+          toolbarHeight: 75,
         ),
-        backgroundColor: Colors.black,
+        backgroundColor: const Color.fromARGB(255, 255, 255, 255),
         body: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Image.asset('assets/batman.png', width: 250),
+              Image.asset('assets/chill_guy.png', width: 270),
               const SizedBox(height: 20),
               Container(
                 padding: const EdgeInsets.all(16),
@@ -35,14 +43,18 @@ class MyApp extends StatelessWidget {
                 ),
                 child: const Column(
                   children: [
-                    Text("💲 Im Rich",
-                        style: TextStyle(fontSize: 16, color: Colors.black)),
-                    Text("😈 Im Vengeance",
-                        style: TextStyle(fontSize: 16, color: Colors.black)),
-                    Text("🌃 Im The Night",
-                        style: TextStyle(fontSize: 16, color: Colors.black)),
-                    Text("🦇 I Am Batman",
-                        style: TextStyle(fontSize: 16, color: Colors.black)),
+                    Text("Stay Chill, Stay Connected!",
+                        style: TextStyle(
+                            fontSize: 28,
+                            color: Colors.black,
+                            fontFamily: 'neuemontreal',
+                            fontWeight: FontWeight.bold)),
+                    Text("You and I are like a really small gang 🤟.",
+                        style: TextStyle(
+                          fontSize: 18,
+                          color: Colors.black,
+                          fontFamily: 'neuemontreal',
+                        )),
                   ],
                 ),
               ),
