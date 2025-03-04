@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
           title: Padding(
             padding: const EdgeInsets.only(top: 14),
             child: const Text(
-              "Friendscape.",
+              "i Am Chill Guy.",
               style: TextStyle(
                 color: Color.fromARGB(255, 255, 255, 255),
                 fontFamily: 'neuemontreal',
@@ -33,7 +33,7 @@ class MyApp extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Image.asset('assets/chill_guy.png', width: 270),
+              Image.asset('assets/chillguy.png', width: 270),
               const SizedBox(height: 20),
               Container(
                 padding: const EdgeInsets.all(16),
@@ -41,20 +41,32 @@ class MyApp extends StatelessWidget {
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(10),
                 ),
-                child: const Column(
+                child: Column(
                   children: [
-                    Text("Stay Chill, Stay Connected!",
+                    Text(
+                      "Stay Chill, Stay Connected!",
+                      style: TextStyle(
+                        fontSize: 28,
+                        color: Colors.black,
+                        fontFamily: 'neuemontreal',
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    SizedBox(height: 14),
+                    ...[
+                      "No Stress ❌",
+                      "No Drama 🤫",
+                      "Just Being a Chill Guy 😎"
+                    ].map(
+                      (text) => Text(
+                        text,
                         style: TextStyle(
-                            fontSize: 28,
-                            color: Colors.black,
-                            fontFamily: 'neuemontreal',
-                            fontWeight: FontWeight.bold)),
-                    Text("You and I are like a really small gang 🤟.",
-                        style: TextStyle(
-                          fontSize: 18,
+                          fontSize: 20,
                           color: Colors.black,
                           fontFamily: 'neuemontreal',
-                        )),
+                        ),
+                      ),
+                    ),
                   ],
                 ),
               ),
